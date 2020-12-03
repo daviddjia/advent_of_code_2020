@@ -2,4 +2,4 @@
 
 f = open('day04_input.txt', 'r')
 
-lines = f.readlines()
+lines = [line for lines in f.readlines()]

@@ -1,5 +1,5 @@
 #!/bin/env/python
 
-f = open('day08_input.txt', 'r')
+f = open('day04_input.txt', 'r')
 
-lines = f.readlines()
+lines = [line for lines in f.readlines()]
