@@ -2,4 +2,4 @@
 
 f = open('day04_input.txt', 'r')
 
-lines = [line for lines in f.readlines()]
+lines = [line.strip() for line in f.readlines()]
