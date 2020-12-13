@@ -15,6 +15,16 @@ while not found:
             break
     time += 1
 
+# Found an interesting property of my input that I highly doubt is a
+# coincidence. A lot of bus numbers were offset from another number BY its bus
+# number. For instance, in my input, 19 is 19 spaces away from 823, 41 is 41
+# spaces away from 443, 17 is 17 spaces away from 823, and so on. This makes it
+# possible to increment by 823*19*17*29*37 and just brute force a solution. I'm
+# not particularly happy with this solution because it requires observing a
+# seemingly arbitrary pattern in the input file that's not discussed at all in
+# the problem, but if it works, it works. The only other way to do this is to
+# resort to Wolfram Alpha (or requires detailed knowledge of the Chinese
+# Remainder Theorem)
 bus_offsets = {
     int(bus): i
     for i, bus in enumerate(buses)
